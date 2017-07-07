@@ -1,0 +1,6 @@
+c:\users\onshore\documents\visual studio 2015\Projects\Math\Math\bin\Debug\Math.exe.config
+c:\users\onshore\documents\visual studio 2015\Projects\Math\Math\bin\Debug\Math.exe
+c:\users\onshore\documents\visual studio 2015\Projects\Math\Math\bin\Debug\Math.pdb
+c:\users\onshore\documents\visual studio 2015\Projects\Math\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
+c:\users\onshore\documents\visual studio 2015\Projects\Math\Math\obj\Debug\Math.exe
+c:\users\onshore\documents\visual studio 2015\Projects\Math\Math\obj\Debug\Math.pdb
