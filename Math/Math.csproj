@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ConsecutivePrimes.cs" />
     <Compile Include="DistinctPowers.cs" />
+    <Compile Include="Fibonacci.cs" />
     <Compile Include="PrimeFinding.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
