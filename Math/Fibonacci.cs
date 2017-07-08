@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Math
 {
-    class Fibonacci
+    public class Fibonacci
     {
         public static void RunEvenFibonacciSum()
         {
@@ -35,13 +35,16 @@ namespace Math
         public static List<int> FibSeq(int check)
         {
             List<int> fib = new List<int>();
-            fib[0] = 1;
-            fib[1] = 2;
+            fib.Add(1);
+            fib.Add(2);
             int temp = 0;
-            for (int index = 0; index <= check; index++)
+            for (int index = 0; temp <= check; index++)
             {
                 temp = fib[index] + fib[index + 1];
-                fib.Add(temp);
+                if (temp<check)
+                {
+                    fib.Add(temp);
+                }
             }
             return fib;
         }

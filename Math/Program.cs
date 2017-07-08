@@ -15,7 +15,7 @@ namespace Math
         public static void Run()
         {
             string option = "1";
-            while (Convert.ToInt32(option) < 4)
+            while (Convert.ToInt32(option) < 5)
             {
                 option = DisplayRunOptions();
                 switch (option)
@@ -29,6 +29,9 @@ namespace Math
                     case "3":
                         ConsecutivePrimes.RunConsecutivePrimeSum();
                         break;
+                    case "4":
+                        Fibonacci.RunEvenFibonacciSum();
+                        break;
                     default:
                         break;
                 }
@@ -40,7 +43,8 @@ namespace Math
             Console.WriteLine("1 - Check Prime");
             Console.WriteLine("2 - Check Range of Distict Powers");
             Console.WriteLine("3 - Consecutive Prime Sum");
-            Console.WriteLine("4 - Exit");
+            Console.WriteLine("4 - Find the Sum of Even Fibonacci Numbers");
+            Console.WriteLine("5 - Exit");
             string read = Console.ReadLine();
             return read;
         }
