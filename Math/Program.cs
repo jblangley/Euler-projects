@@ -15,7 +15,7 @@ namespace Math
         public static void Run()
         {
             string option = "1";
-            while (Convert.ToInt32(option) < 6)
+            while (Convert.ToInt32(option) < 7)
             {
                 option = DisplayRunOptions();
                 switch (option)
@@ -35,6 +35,9 @@ namespace Math
                     case "5":
                         SumSquareDifference.RunSumSquareDifference();
                         break;
+                    case "6":
+                        SmallestMultiple.RunSmallestMultiple();
+                        break;
                     default:
                         break;
                 }
@@ -48,7 +51,7 @@ namespace Math
             Console.WriteLine("3 - Consecutive Prime Sum");
             Console.WriteLine("4 - Find the Sum of Even Fibonacci Numbers");
             Console.WriteLine("5 - Find the Sum Square Difference");
-            Console.WriteLine("6 - Find the smallest ");
+            Console.WriteLine("6 - Find the Smallest Multiple");
             Console.WriteLine("7 - Exit");
             string read = Console.ReadLine();
             return read;

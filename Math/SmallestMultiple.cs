@@ -21,7 +21,8 @@ namespace Math
         public static void SmallMulti()
         {
             int check = DisplaySmallestMultiple();
-
+            int result = FindMultiples(check);
+            Console.WriteLine("Your result is: " + result);
         }
         public static int DisplaySmallestMultiple()
         {
@@ -31,8 +32,15 @@ namespace Math
         }
         public static int FindMultiples(int check)
         {
-            int result = 0;
-
+            int result = check;
+            for (int index = check; index >= 1; index--)
+            {
+                if (result%index != 0)
+                {
+                    result++;
+                    index = check;
+                }
+            }
             return result;
         }
         public static string Prompt(string input)
