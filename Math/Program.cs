@@ -15,7 +15,7 @@ namespace Math
         public static void Run()
         {
             string option = "1";
-            while (Convert.ToInt32(option) < 5)
+            while (Convert.ToInt32(option) < 6)
             {
                 option = DisplayRunOptions();
                 switch (option)
@@ -31,6 +31,9 @@ namespace Math
                         break;
                     case "4":
                         Fibonacci.RunEvenFibonacciSum();
+                        break;
+                    case "5":
+                        SumSquareDifference.RunSumSquareDifference();
                         break;
                     default:
                         break;
