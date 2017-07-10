@@ -47,7 +47,9 @@ namespace Math
             Console.WriteLine("2 - Check Range of Distict Powers");
             Console.WriteLine("3 - Consecutive Prime Sum");
             Console.WriteLine("4 - Find the Sum of Even Fibonacci Numbers");
-            Console.WriteLine("5 - Exit");
+            Console.WriteLine("5 - Find the Sum Square Difference");
+            Console.WriteLine("6 - Find the smallest ");
+            Console.WriteLine("7 - Exit");
             string read = Console.ReadLine();
             return read;
         }
