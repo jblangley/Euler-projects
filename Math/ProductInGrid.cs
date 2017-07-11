@@ -52,7 +52,19 @@ namespace Math
                 {20,73,35,29,78,31,90,01,74,31,49,71,48,86,81,16,23,57,05,54},
                 {01,70,54,71,83,51,54,69,16,92,33,48,61,43,52,01,89,19,67,48},
             };
+            DisplayArray(arr);
             return arr;
+        }
+        public static void DisplayArray(int[,] arr)
+        {
+            for (int first = 0; first < 20; first++)
+            {
+                for (int second = 0; second < 20; second++)
+                {
+                    Console.Write(arr[first,second] + " ");
+                }
+                Console.WriteLine();
+            }
         }
         public static long RunHori(int[,] arr)
         {
