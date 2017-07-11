@@ -58,9 +58,9 @@ namespace Math
         {
             long large = 0;
             long product = 0;
-            for (int first = 0; first < arr.Length; first++)
+            for (int first = 0; first < 20; first++)
             {
-                for (int second = 0; second < arr.Length - 3; second++)
+                for (int second = 0; second < 17; second++)
                 {
                     product = arr[first, second] * arr[first, second+1] * arr[first, second+2] * arr[first, second+3];
                     if (product>large)
@@ -75,9 +75,9 @@ namespace Math
         {
             long large = 0;
             long product = 0;
-            for (int first = 0; first < arr.Length - 3; first++)
+            for (int first = 0; first < 17; first++)
             {
-                for (int second = 0; second < arr.Length; second++)
+                for (int second = 0; second < 20; second++)
                 {
                     product = arr[first, second] * arr[first + 1, second] * arr[first + 2, second] * arr[first + 3, second];
                     if (product > large)
@@ -92,9 +92,9 @@ namespace Math
         {
             long large = 0;
             long product = 0;
-            for (int first = 0; first < arr.Length - 3; first++)
+            for (int first = 0; first < 17; first++)
             {
-                for (int second = 0; second < arr.Length - 3; second++)
+                for (int second = 0; second < 17; second++)
                 {
                     product = arr[first, second] * arr[first + 1, second + 1] * arr[first + 2, second + 2] * arr[first + 3, second + 3];
                     if (product > large)
@@ -109,11 +109,11 @@ namespace Math
         {
             long large = 0;
             long product = 0;
-            for (int first = 3; first < arr.Length; first++)
+            for (int first = 3; first < 20; first++)
             {
-                for (int second = 0; second < arr.Length - 3; second++)
+                for (int second = 0; second < 16; second++)
                 {
-                    product = arr[first, second] * arr[first - 1, second - 1] * arr[first - 2, second - 2] * arr[first - 3, second - 3];
+                    product = arr[first, second] * arr[first - 1, second + 1] * arr[first - 2, second + 2] * arr[first - 3, second + 3];
                     if (product > large)
                     {
                         large = product;
